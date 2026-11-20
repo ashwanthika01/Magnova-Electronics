@@ -1,0 +1,8 @@
+import { Settings, Cog, Layers, Award, Users, Factory, ShieldCheck, Target, Mountain, Mail, Phone, Globe, Clock, Headset, MapPin, ShoppingCart, User, Search, ChevronRight, ChevronLeft, ChevronDown, Check, Leaf, VolumeX, Maximize2, Thermometer, Zap, Activity, Gauge, SlidersHorizontal, Cpu, Truck, RotateCcw, CreditCard, Package, Handshake, FlaskConical, ClipboardCheck, TrendingUp, Heart, LayoutGrid, List, Paperclip, Send, RefreshCw, Calendar, FileText, Home, Microscope, Pencil, Magnet, Menu, X, MessageSquare, Waves, Monitor, Lock, BadgeCheck } from 'lucide-react';
+
+const MAP = { gear: Settings, gear2: Cog, layers: Layers, award: Award, users: Users, factory: Factory, shield: ShieldCheck, target: Target, mountain: Mountain, mail: Mail, phone: Phone, globe: Globe, clock: Clock, headset: Headset, pin: MapPin, cart: ShoppingCart, user: User, search: Search, right: ChevronRight, left: ChevronLeft, down: ChevronDown, check: Check, leaf: Leaf, volume: VolumeX, compact: Maximize2, thermo: Thermometer, zap: Zap, activity: Activity, gauge: Gauge, sliders: SlidersHorizontal, cpu: Cpu, truck: Truck, undo: RotateCcw, card: CreditCard, package: Package, handshake: Handshake, flask: FlaskConical, clipboard: ClipboardCheck, trend: TrendingUp, heart: Heart, grid: LayoutGrid, list: List, clip: Paperclip, send: Send, refresh: RefreshCw, calendar: Calendar, file: FileText, home: Home, micro: Microscope, pencil: Pencil, magnet: Magnet, menu: Menu, x: X, chat: MessageSquare, wave: Waves, coil: Waves, design: Monitor, lock: Lock, badge: BadgeCheck };
+
+export default function Icon({ name, size = 22, className = 'ic', ...p }) {
+  const C = MAP[name] || Settings;
+  return <C size={size} className={className} strokeWidth={1.9} aria-hidden="true" {...p} />;
+}
